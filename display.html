@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>User Information</h2>
+
+    <div id="userDetails">
+        <label>Name</label>
+        <input id="name">
+
+        <label>Age</label>
+        <input id="age">
+
+        <label>Phone</label>
+        <input id="phone">
+
+        <label>Email</label>
+        <input id="email">
+
+        <label>Address</label>
+        <textarea id="address"></textarea>
+
+        <label>Pincode</label>
+        <input id="pincode">
+    </div>
+
+    <br>
+    <div class="buttons">
+        <button class="btn primary" onclick="updateProfile()">Update Profile</button>
+        <button class="btn secondary" onclick="openPasswordPopup()">Change Password</button>
+        <button class="btn danger" onclick="logout()">Logout</button>
+    </div>
+
+
+    <!-- Change Password Popup -->
+    <div id="passwordPopup" class="popup">
+        <div class="popup-content">
+            <h3>Change Password</h3>
+
+            <input type="password" id="newPass" placeholder="Enter new password">
+            <input type="password" id="rePass" placeholder="Re-enter password">
+
+            <label>
+                <input type="checkbox" id="confirmCheck">
+                I confirm to change password
+            </label>
+
+            <br><br>
+            <button onclick="changePassword()">Confirm</button>
+            <button onclick="closePasswordPopup()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="display.js"></script>
+
+
+</html>
