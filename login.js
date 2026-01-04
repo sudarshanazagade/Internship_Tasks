@@ -1,4 +1,4 @@
-// Auto-fill login field
+
 let prefill = JSON.parse(localStorage.getItem("loginPrefill"));
 if (prefill) {
     document.getElementById("loginId").value = prefill.email || prefill.phone;
