@@ -10,11 +10,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
         pincode: document.getElementById("pincode").value,
         password: document.getElementById("password").value
     };
-
-    // Save user data
     localStorage.setItem("userData", JSON.stringify(user));
-
-    // Save data for auto-fill on login
     localStorage.setItem(
         "loginPrefill",
         JSON.stringify({ email: user.email, phone: user.phone })
